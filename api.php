@@ -12,7 +12,6 @@ class api extends restful_api {
             $query = "SELECT * FROM `tables` ";
             $data_select = $this->select_list($query);
             $this->response(200, $data_select);
-        
         }
     }
     function login(){
@@ -22,6 +21,7 @@ class api extends restful_api {
 
             $query = "SELECT id,status FROM `users` WHERE `account` = '$data[0]' AND `password` = '$data[1]'";
             $data_select = $this->select_list($query);
+            
             $this->response(200, $data_select);
         }
     }
