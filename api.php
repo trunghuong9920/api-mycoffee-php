@@ -9,8 +9,17 @@ class api extends restful_api {
 
     function tables(){
         if ($this->method == 'GET'){
-            $query = "SELECT * FROM `tables` ";
+            $query = "SELECT * FROM `tables` ORDER BY status DESC ";
             $data_select = $this->select_list($query);
+            $this->response(200, $data_select);
+        }
+        elseif($this->method == 'POST'){
+            $name = isset($_POST["name"]) ? $_POST["name"] : '';
+            $area = isset($_POST["area"]) ? $_POST["area"] : '';
+
+            $query = "INSERT INTO `tables`(`id`, `name`, `status`, `area`) VALUES ('','$name','','$area')";
+            $data_select = $this->exec_update($query);
+            
             $this->response(200, $data_select);
         }
     }
@@ -42,29 +51,27 @@ class api extends restful_api {
             $this->response(200, $data_select);
         }
         elseif($this->method == 'POST'){
-            $data = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-            $this->endpoint = array_shift($data);
+            $account = isset($_POST["account"]) ? $_POST["account"] : '';
+            $name = isset($_POST["name"]) ? $_POST["name"] : '';
+            $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
+            $avata = isset($_POST["avata"]) ? $_POST["avata"] : '';
+            $permission = isset($_POST["permission"]) ? $_POST["permission"] : '';
+            $password = isset($_POST["password"]) ? $_POST["password"] : '';
 
-            if($data[3] != 'a'){
-                $query = "INSERT INTO `users`(`id`, `account`, `name`, `phone`, `avata`, `permission`, `password`, `status`) 
-                VALUES ('','$data[0]','$data[1]','$data[2]','$data[3]','$data[4]','$data[5]','')";
-                $data_select = $this->exec_update($query);
-            }
-            else{
-                $query = "INSERT INTO `users`(`id`, `account`, `name`, `phone`, `avata`, `permission`, `password`, `status`) 
-                VALUES ('','$data[0]','$data[1]','$data[2]','','$data[4]','$data[5]','')";
-                $data_select = $this->exec_update($query);
-            }
+            $query = "INSERT INTO `users`(`id`, `account`, `name`, `phone`, `avata`, `permission`, `password`, `status`) 
+            VALUES ('','$account','$name','$phone','$avata','$permission','$password','')";
+            $data_select = $this->exec_update($query);
             
-            $this->response(200, $data);
+            $this->response(200, $data_select);
         }
     }
-    function searchallaccount(){
+    function getaccount(){
         if ($this->method == 'POST'){
-            
-            // $data = $_POST['name'];
-            // print_r($data);
-            // $this->response(200, $data);
+            $account = isset($_POST["account"]) ? $_POST["account"] : '';
+
+            $query = "SELECT `id` FROM `users` WHERE `account` = '$account'";
+            $data_select = $this->select_list($query);
+            $this->response(200, $data_select);
         }
     }
     function searchusers(){
@@ -113,11 +120,31 @@ class api extends restful_api {
             $data_select = $this->select_list($query);
             $this->response(200, $data_select);
         }
+        elseif($this->method == 'POST'){
+            $name = isset($_POST["name"]) ? $_POST["name"] : '';
+
+            $query = "INSERT INTO `categorys`(`id`, `name`) VALUES ('','$name')";
+            $data_select = $this->exec_update($query);
+            
+            $this->response(200, $data_select);
+        }
     }
     function products(){
         if ($this->method == 'GET'){
             $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id";
             $data_select = $this->select_list($query);
+            $this->response(200, $data_select);
+        }
+        elseif($this->method == 'POST'){
+            $idc = isset($_POST["idc"]) ? $_POST["idc"] : '';
+            $name = isset($_POST["name"]) ? $_POST["name"] : '';
+            $img = isset($_POST["img"]) ? $_POST["img"] : '';
+            $price = isset($_POST["price"]) ? $_POST["price"] : '';
+
+            $query = "INSERT INTO `products`(`id`, `idc`, `name`, `img`, `price`) 
+            VALUES ('','$idc','$name','$img','$price')";
+            $data_select = $this->exec_update($query);
+            
             $this->response(200, $data_select);
         }
     }
