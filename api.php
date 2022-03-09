@@ -16,21 +16,20 @@ class api extends restful_api {
     }
     function login(){
         if ($this->method == 'POST'){
-            $data = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-            $this->endpoint = array_shift($data);
+            $account = isset($_POST["account"]) ? $_POST["account"] : '';
+            $password = isset($_POST["password"]) ? $_POST["password"] : '';
 
-            $query = "SELECT id,status FROM `users` WHERE `account` = '$data[0]' AND `password` = '$data[1]'";
+            $query = "SELECT id,status FROM `users` WHERE `account` = '$account' AND `password` = '$password'";
             $data_select = $this->select_list($query);
-            
+           
             $this->response(200, $data_select);
         }
     }
     function info(){
         if ($this->method == 'POST'){
-            $data = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-            $this->endpoint = array_shift($data);
+            $id = isset($_POST["id"]) ? $_POST["id"] : '';
 
-            $query = "SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '$data[0]'";
+            $query = "SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '$id'";
             $data_select = $this->select_list($query);
             
             $this->response(200, $data_select);
@@ -62,8 +61,7 @@ class api extends restful_api {
     }
     function searchallaccount(){
         if ($this->method == 'POST'){
-            // $data = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-            // $this->endpoint = array_shift($data);
+            
             // $data = $_POST['name'];
             // print_r($data);
             // $this->response(200, $data);
@@ -71,10 +69,9 @@ class api extends restful_api {
     }
     function searchusers(){
         if ($this->method == 'POST'){
-            $data = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-            $this->endpoint = array_shift($data);
+            $qsearch = isset($_POST["qsearch"]) ? $_POST["qsearch"] : '';
 
-            $query = "SELECT * FROM `users` WHERE `id` LIKE '%$data[0]%' OR `account` LIKE '%$data[0]%' OR `name` LIKE '%$data[0]%' OR `phone` LIKE '%$data[0]%'";
+            $query = "SELECT * FROM `users` WHERE `id` LIKE '%$qsearch%' OR `account` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
             $data_select = $this->select_list($query);
             
             $this->response(200, $data_select);
@@ -82,10 +79,9 @@ class api extends restful_api {
     }
     function searchtables(){
         if ($this->method == 'POST'){
-            $data = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-            $this->endpoint = array_shift($data);
+            $qsearch = isset($_POST["qsearch"]) ? $_POST["qsearch"] : '';
 
-            $query = "SELECT * FROM `tables` WHERE `id` LIKE '%$data[0]%' OR `name` LIKE '%$data[0]%'";
+            $query = "SELECT * FROM `tables` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
             $data_select = $this->select_list($query);
             
             $this->response(200, $data_select);
@@ -93,10 +89,9 @@ class api extends restful_api {
     }
     function searchcate(){
         if ($this->method == 'POST'){
-            $data = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-            $this->endpoint = array_shift($data);
+            $qsearch = isset($_POST["qsearch"]) ? $_POST["qsearch"] : '';
 
-            $query = "SELECT * FROM `categorys` WHERE `id` LIKE '%$data[0]%' OR `name` LIKE '%$data[0]%'";
+            $query = "SELECT * FROM `categorys` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
             $data_select = $this->select_list($query);
             
             $this->response(200, $data_select);
@@ -104,10 +99,9 @@ class api extends restful_api {
     }
     function searchproducts(){
         if ($this->method == 'POST'){
-            $data = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-            $this->endpoint = array_shift($data);
+            $qsearch = isset($_POST["qsearch"]) ? $_POST["qsearch"] : '';
 
-            $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id AND (products.id LIKE '%$data[0]%' OR products.name LIKE '%$data[0]%')";
+            $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id AND (products.id LIKE '%$qsearch%' OR products.name LIKE '%$qsearch%')";
             $data_select = $this->select_list($query);
             
             $this->response(200, $data_select);
