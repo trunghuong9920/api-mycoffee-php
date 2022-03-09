@@ -35,8 +35,8 @@ class api extends restful_api {
         }
     }
     function info(){
-        if ($this->method == 'POST'){
-            $id = isset($_POST["id"]) ? $_POST["id"] : '';
+        if ($this->method == 'GET'){
+            $id = isset($_GET["id"]) ? $_GET["id"] : '';
 
             $query = "SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '$id'";
             $data_select = $this->select_list($query);
@@ -46,74 +46,110 @@ class api extends restful_api {
     }
     function users(){
         if ($this->method == 'GET'){
-            $query = "SELECT id,account,name,phone,avata, permission, status FROM `users` ";
-            $data_select = $this->select_list($query);
-            $this->response(200, $data_select);
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "getalldata":
+                    $query = "SELECT id,account,name,phone,avata, permission, status FROM `users` ";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "edituser":
+                    $id = isset($_GET["id"]) ? $_GET["id"] : '';
+                    $query = "SELECT `account`,`name`,`phone`,`avata`,`permission` FROM `users` WHERE `id` = '$id'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "getaccount":
+                    $query = "SELECT `account` FROM `users`";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+            }
         }
         elseif($this->method == 'POST'){
-            $account = isset($_POST["account"]) ? $_POST["account"] : '';
-            $name = isset($_POST["name"]) ? $_POST["name"] : '';
-            $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
-            $avata = isset($_POST["avata"]) ? $_POST["avata"] : '';
-            $permission = isset($_POST["permission"]) ? $_POST["permission"] : '';
-            $password = isset($_POST["password"]) ? $_POST["password"] : '';
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "adduser":
+                    $account = isset($_POST["account"]) ? $_POST["account"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
+                    $avata = isset($_POST["avata"]) ? $_POST["avata"] : '';
+                    $permission = isset($_POST["permission"]) ? $_POST["permission"] : '';
+                    $password = isset($_POST["password"]) ? $_POST["password"] : '';
+        
+                    $query = "INSERT INTO `users`(`id`, `account`, `name`, `phone`, `avata`, `permission`, `password`, `status`) 
+                    VALUES ('','$account','$name','$phone','$avata','$permission','$password','')";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "updateuser":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $account = isset($_POST["account"]) ? $_POST["account"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
+                    $avata = isset($_POST["avata"]) ? $_POST["avata"] : '';
+                    $permission = isset($_POST["permission"]) ? $_POST["permission"] : '';
 
-            $query = "INSERT INTO `users`(`id`, `account`, `name`, `phone`, `avata`, `permission`, `password`, `status`) 
-            VALUES ('','$account','$name','$phone','$avata','$permission','$password','')";
-            $data_select = $this->exec_update($query);
+                    $query = "UPDATE `users` SET `account`='$account',`name`='$name',
+                    `phone`='$phone',`avata`='$avata',`permission`='$permission' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "deleteuser":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+
+                    $query = "DELETE FROM `users` WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                default:
+                    $this->response(200, []);
+            }
+           
+        }
+    }
+    
+    function search(){
+        if ($this->method == 'GET'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "user":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT * FROM `users` WHERE `id` LIKE '%$qsearch%' OR `account` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "tables":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT * FROM `tables` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "categorys":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT * FROM `categorys` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
+                    $data_select = $this->select_list($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "products":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id AND (products.id LIKE '%$qsearch%' OR products.name LIKE '%$qsearch%')";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+            }
             
-            $this->response(200, $data_select);
         }
+        
     }
-    function getaccount(){
-        if ($this->method == 'POST'){
-            $account = isset($_POST["account"]) ? $_POST["account"] : '';
 
-            $query = "SELECT `id` FROM `users` WHERE `account` = '$account'";
-            $data_select = $this->select_list($query);
-            $this->response(200, $data_select);
-        }
-    }
-    function searchusers(){
-        if ($this->method == 'POST'){
-            $qsearch = isset($_POST["qsearch"]) ? $_POST["qsearch"] : '';
-
-            $query = "SELECT * FROM `users` WHERE `id` LIKE '%$qsearch%' OR `account` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
-            $data_select = $this->select_list($query);
-            
-            $this->response(200, $data_select);
-        }
-    }
-    function searchtables(){
-        if ($this->method == 'POST'){
-            $qsearch = isset($_POST["qsearch"]) ? $_POST["qsearch"] : '';
-
-            $query = "SELECT * FROM `tables` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
-            $data_select = $this->select_list($query);
-            
-            $this->response(200, $data_select);
-        }
-    }
-    function searchcate(){
-        if ($this->method == 'POST'){
-            $qsearch = isset($_POST["qsearch"]) ? $_POST["qsearch"] : '';
-
-            $query = "SELECT * FROM `categorys` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
-            $data_select = $this->select_list($query);
-            
-            $this->response(200, $data_select);
-        }
-    }
-    function searchproducts(){
-        if ($this->method == 'POST'){
-            $qsearch = isset($_POST["qsearch"]) ? $_POST["qsearch"] : '';
-
-            $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id AND (products.id LIKE '%$qsearch%' OR products.name LIKE '%$qsearch%')";
-            $data_select = $this->select_list($query);
-            
-            $this->response(200, $data_select);
-        }
-    }
     function categorys(){
         if ($this->method == 'GET'){
             $query = "SELECT * FROM `categorys` ";
