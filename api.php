@@ -28,6 +28,67 @@ class api extends restful_api {
             
             $this->response(200, $data_select);
         }
+        elseif($this->method == 'POST'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "updateaccount":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $account = isset($_POST["account"]) ? $_POST["account"] : '';
+
+                    $query = "UPDATE `users` SET `account`='$account' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "updatename":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+
+                    $query = "UPDATE `users` SET `name`='$name' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "updatephone":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
+
+                    $query = "UPDATE `users` SET `phone`='$phone' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "checkpass":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $password = isset($_POST["password"]) ? $_POST["password"] : '';
+
+                    $query = "SELECT `id` FROM `users` WHERE `id` = '$id' AND `password` = '$password'";
+                    $data_select = $this->select_list($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "updatepassword":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $password = isset($_POST["password"]) ? $_POST["password"] : '';
+
+                    $query = "UPDATE `users` SET `password`='$password' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                 case "updateavata":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $avata = isset($_POST["avata"]) ? $_POST["avata"] : '';
+
+                    $query = "UPDATE `users` SET `avata`='$avata' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, $data_select);
+            }
+        }
     }
 
     function search(){

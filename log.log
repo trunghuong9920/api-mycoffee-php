@@ -2275,3 +2275,287 @@ ucts.name,categorys.id as idc,`price` FROM `products`,`categorys` WHERE
 10.03.2022 11:07:33 <!-- sql=[DELETE FROM `products` WHERE `id`= '8'] --> 
 10.03.2022 11:07:34 sql=[SELECT * FROM `categorys` ] 
 10.03.2022 11:07:36 sql=[SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id] 
+10.03.2022 01:39:43 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:39:54 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:46:30 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:47:52 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:48:06 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:48:08 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:50:38 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:51:34 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:51:34 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:53:04 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:53:04 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:54:36 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:54:36 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:56:21 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:56:21 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:56:21 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:56:39 <!-- sql=[UPDATE `users` SET `account`='trunghuong09' WHERE `id` = '1'] --> 
+10.03.2022 01:56:44 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:56:44 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:56:44 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:58:16 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:58:16 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:58:19 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:58:19 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:58:19 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:58:40 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:58:40 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:58:42 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:58:42 sql=[SELECT `account` FROM `users`] 
+10.03.2022 01:58:42 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:59:05 <!-- sql=[UPDATE `users` SET `account`='trunghuong' WHERE `id` = '1'] --> 
+10.03.2022 01:59:08 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 01:59:12 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 01:59:12 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:00:41 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:00:41 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:00:48 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:00:48 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:00:58 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 02:01:04 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:01:04 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:01:54 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:01:54 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:02:39 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 02:03:48 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:03:48 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:03:55 <!-- sql=[UPDATE `users` SET `name`='Ma Trung H' WHERE `id` = '1'] --> 
+10.03.2022 02:04:03 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 02:04:06 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:04:06 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:04:11 <!-- sql=[UPDATE `users` SET `name`='Ma Trung Hướng' WHERE `id` = '1'] --> 
+10.03.2022 02:05:53 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:06:02 <!-- sql=[UPDATE `users` SET `phone`='1112131231' WHERE `id` = '1'] --> 
+10.03.2022 02:06:04 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 02:06:11 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:06:11 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:06:24 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 02:08:33 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:08:33 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:10:32 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:10:32 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:11:18 <!-- sql=[UPDATE `users` SET `phone`='0234838478' WHERE `id` = '1'] --> 
+10.03.2022 02:11:20 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 02:11:23 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:11:23 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:13:14 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:13:14 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:13:19 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:13:19 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:13:19 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:13:40 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:13:40 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:13:48 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:13:48 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:16:47 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:16:47 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:18:02 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:18:02 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:18:41 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:18:41 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:19:32 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:19:32 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:19:39 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:19:39 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:19:56 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:19:56 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:19:56 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:20:39 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:20:39 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:21:35 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:21:35 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:22:00 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:22:00 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:22:48 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:22:51 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:22:51 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:22:51 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:22:58 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:22:58 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:22:58 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:23:15 sql=[SELECT `account` FROM `users`] 
+ta, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:23:27 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:23:27 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:23:31 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:23:31 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:23:31 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:23:52 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:23:52 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:24:01 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:24:01 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:24:19 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:24:19 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:25:03 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:25:03 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:27:48 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:27:48 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:33:03 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:33:03 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:34:05 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:34:05 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:34:08 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:34:08 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:35:02 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:35:02 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:36:00 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:36:00 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:37:24 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:37:24 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:38:30 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:38:30 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:38:34 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:38:34 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:38:34 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:38:39 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:38:40 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:38:42 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] --> 
+10.03.2022 02:38:42 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:39:48 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:39:49 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'd'] --> 
+10.03.2022 02:39:49 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'ds'] --> 
+10.03.2022 02:39:49 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsa'] --> 
+10.03.2022 02:39:49 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsad'] --> 
+10.03.2022 02:39:49 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsads'] --> 
+10.03.2022 02:39:50 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsadsa'] --> 
+10.03.2022 02:39:59 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsadsad'] --> 
+10.03.2022 02:40:00 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsadsa'] --> 
+10.03.2022 02:40:00 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsads'] --> 
+10.03.2022 02:40:00 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsad'] --> 
+10.03.2022 02:40:00 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dsa'] --> 
+10.03.2022 02:40:00 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'ds'] --> 
+10.03.2022 02:40:00 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'd'] --> 
+10.03.2022 02:40:00 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:40:01 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:40:12 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:40:12 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:40:24 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:40:30 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'd'] --> 
+10.03.2022 02:40:31 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = 'dd'] --> 
+10.03.2022 02:41:03 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:41:03 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:41:05 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '000000'] --> 
+10.03.2022 02:41:06 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '00000'] --> 
+10.03.2022 02:41:07 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '0000'] --> 
+10.03.2022 02:41:07 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '000'] --> 
+10.03.2022 02:41:07 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '00'] --> 
+10.03.2022 02:41:08 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '0'] --> 
+10.03.2022 02:41:08 <!-- sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:41:28 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:41:28 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:41:30 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:41:31 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1d'] --> 
+10.03.2022 02:41:31 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:41:31 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:41:32 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:41:33 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:41:43 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:41:43 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:41:53 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:41:53 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:41:54 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '000000'] --> 
+10.03.2022 02:41:54 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '00000'] --> 
+10.03.2022 02:41:55 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '0000'] --> 
+10.03.2022 02:41:55 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '000'] --> 
+10.03.2022 02:41:55 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '00'] --> 
+10.03.2022 02:41:56 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '0'] --> 
+10.03.2022 02:41:56 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:42:06 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:42:07 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = ''] --> 
+10.03.2022 02:42:09 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:42:09 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1d'] --> 
+10.03.2022 02:42:10 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1ds'] --> 
+10.03.2022 02:42:10 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1d'] --> 
+10.03.2022 02:42:10 <!-- sql=[SELECT `id`,`account` FROM `users` WHERE `id` = '1' AND `password` = '1'] --> 
+10.03.2022 02:42:58 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = ''] 
+10.03.2022 02:43:02 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:43:13 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+10.03.2022 02:43:16 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:43:18 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+10.03.2022 02:43:18 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:43:57 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:43:57 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:44:15 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:44:15 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:44:19 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '00000'] 
+10.03.2022 02:44:19 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '0000'] 
+10.03.2022 02:44:19 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '000'] 
+10.03.2022 02:44:19 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '00'] 
+10.03.2022 02:44:19 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '0'] 
+10.03.2022 02:44:19 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = ''] 
+10.03.2022 02:44:23 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:44:43 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:44:43 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:44:50 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:44:52 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+10.03.2022 02:45:52 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:45:52 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:46:15 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:46:15 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:46:21 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:46:22 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+10.03.2022 02:46:28 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:46:28 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = ''] 
+10.03.2022 02:47:21 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:47:21 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:48:22 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:48:22 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:48:52 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:48:52 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:49:02 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:49:03 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+10.03.2022 02:49:34 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:49:34 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:50:25 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:50:25 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:50:27 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:50:27 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:50:27 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:50:33 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:50:38 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+10.03.2022 02:50:54 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:51:07 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:51:07 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:51:07 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:52:05 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:52:05 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:52:27 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:52:27 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:53:17 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:53:17 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:53:21 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:53:30 <!-- sql=[UPDATE `users` SET `phone`='' WHERE `id` = '1'] --> 
+10.03.2022 02:53:39 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:53:40 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+10.03.2022 02:54:35 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:54:35 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:54:38 sql=[SELECT `account` FROM `users`] 
+ta, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:55:27 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:55:27 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:55:36 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:55:36 sql=[SELECT `account` FROM `users`] 
+10.03.2022 02:55:36 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:56:00 <!-- sql=[UPDATE `users` SET `phone`='0395749843' WHERE `id` = '1'] --> 
+10.03.2022 02:56:10 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:56:14 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+10.03.2022 02:56:24 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+10.03.2022 02:56:27 <!-- sql=[UPDATE `users` SET `password`='12' WHERE `id` = '1'] --> 
+10.03.2022 02:57:36 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 02:57:36 sql=[SELECT `account` FROM `users`] 
+10.03.2022 03:00:53 sql=[SELECT `account` FROM `users`] 
+ta, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 03:01:13 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 03:01:13 sql=[SELECT `account` FROM `users`] 
+10.03.2022 03:01:13 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 03:01:49 <!-- sql=[UPDATE `users` SET `avata`='https://luv.vn/wp-content/uploads/2021/08/hinh-anh-gai-xinh-11.jpg' WHERE `id` = '1'] --> 
+10.03.2022 03:01:50 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 03:01:54 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+10.03.2022 03:01:54 sql=[SELECT `account` FROM `users`] 
+10.03.2022 03:08:36 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+10.03.2022 03:08:38 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+10.03.2022 03:08:42 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+10.03.2022 03:08:43 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
