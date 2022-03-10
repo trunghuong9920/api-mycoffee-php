@@ -205,6 +205,13 @@ class api extends restful_api {
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
+                case "getproduct":
+                    $id = isset($_GET["id"]) ? $_GET["id"] : '';
+
+                    $query = "SELECT * FROM `products` WHERE `idc` = '$id'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
                 default:
                     $this->response(200, []);
             }
@@ -226,6 +233,13 @@ class api extends restful_api {
                     $data_select = $this->exec_update($query);
                     $this->response(200, $data_select);
                     break;
+                case "delete":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    
+                    $query = "DELETE FROM `categorys` WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
                 default:
                     $this->response(200, []);
             }
@@ -233,21 +247,62 @@ class api extends restful_api {
     }
     function products(){
         if ($this->method == 'GET'){
-            $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id";
-            $data_select = $this->select_list($query);
-            $this->response(200, $data_select);
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "getall":
+                    $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "getone":
+                    $id = isset($_GET["id"]) ? $_GET["id"] : '';
+                    $query = "SELECT products.id,`img`,products.name,categorys.id as idc,`price` FROM `products`,`categorys` WHERE
+                    products.id = '$id' 
+                    AND
+                    products.idc = categorys.id";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default: 
+                    $this->response(200, $data_select);
+            }
         }
         elseif($this->method == 'POST'){
-            $idc = isset($_POST["idc"]) ? $_POST["idc"] : '';
-            $name = isset($_POST["name"]) ? $_POST["name"] : '';
-            $img = isset($_POST["img"]) ? $_POST["img"] : '';
-            $price = isset($_POST["price"]) ? $_POST["price"] : '';
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "add":
+                    $idc = isset($_POST["idc"]) ? $_POST["idc"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    $img = isset($_POST["img"]) ? $_POST["img"] : '';
+                    $price = isset($_POST["price"]) ? $_POST["price"] : '';
 
-            $query = "INSERT INTO `products`(`id`, `idc`, `name`, `img`, `price`) 
-            VALUES ('','$idc','$name','$img','$price')";
-            $data_select = $this->exec_update($query);
-            
-            $this->response(200, $data_select);
+                    $query = "INSERT INTO `products`(`id`, `idc`, `name`, `img`, `price`) 
+                    VALUES ('','$idc','$name','$img','$price')";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                case "update":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $idc = isset($_POST["idc"]) ? $_POST["idc"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    $img = isset($_POST["img"]) ? $_POST["img"] : '';
+                    $price = isset($_POST["price"]) ? $_POST["price"] : '';
+
+                    $query = "UPDATE `products` SET `idc`='$idc',
+                    `name`='$name',`img`='$img',`price`='$price' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                case "delete":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+
+                    $query = "DELETE FROM `products` WHERE `id`= '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                default:
+                    $this->response(200, $data_select);
+            }
         }
     }
 }
