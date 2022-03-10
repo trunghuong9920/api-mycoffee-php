@@ -7,22 +7,7 @@ class api extends restful_api {
         parent::__construct();
     }
 
-    function tables(){
-        if ($this->method == 'GET'){
-            $query = "SELECT * FROM `tables` ORDER BY status DESC ";
-            $data_select = $this->select_list($query);
-            $this->response(200, $data_select);
-        }
-        elseif($this->method == 'POST'){
-            $name = isset($_POST["name"]) ? $_POST["name"] : '';
-            $area = isset($_POST["area"]) ? $_POST["area"] : '';
-
-            $query = "INSERT INTO `tables`(`id`, `name`, `status`, `area`) VALUES ('','$name','','$area')";
-            $data_select = $this->exec_update($query);
-            
-            $this->response(200, $data_select);
-        }
-    }
+   
     function login(){
         if ($this->method == 'POST'){
             $account = isset($_POST["account"]) ? $_POST["account"] : '';
@@ -44,6 +29,44 @@ class api extends restful_api {
             $this->response(200, $data_select);
         }
     }
+
+    function search(){
+        if ($this->method == 'GET'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "user":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT * FROM `users` WHERE `id` LIKE '%$qsearch%' OR `account` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "tables":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT * FROM `tables` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "categorys":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT * FROM `categorys` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
+                    $data_select = $this->select_list($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "products":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id AND (products.id LIKE '%$qsearch%' OR products.name LIKE '%$qsearch%')";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+            }
+            
+        }
+        
+    }
+
     function users(){
         if ($this->method == 'GET'){
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
@@ -112,57 +135,100 @@ class api extends restful_api {
            
         }
     }
-    
-    function search(){
+    function tables(){
         if ($this->method == 'GET'){
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
             switch($type[1]){
-                case "user":
-                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
-                    $query = "SELECT * FROM `users` WHERE `id` LIKE '%$qsearch%' OR `account` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
+                case "getall":
+                    $query = "SELECT * FROM `tables` ORDER BY status DESC ";
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
-                case "tables":
-                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
-                    $query = "SELECT * FROM `tables` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
+                case "getone":
+                    $id = isset($_GET["id"]) ? $_GET["id"] : '';
+                    $query = "SELECT * FROM `tables` WHERE `id` = '$id'";
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
-                case "categorys":
-                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
-                    $query = "SELECT * FROM `categorys` WHERE `id` LIKE '%$qsearch%' OR `name` LIKE '%$qsearch%'";
-                    $data_select = $this->select_list($query);
+            }
+        }
+        elseif($this->method == 'POST'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "add":
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    $area = isset($_POST["area"]) ? $_POST["area"] : '';
+
+                    $query = "INSERT INTO `tables`(`id`, `name`, `status`, `area`) VALUES ('','$name','','$area')";
+                    $data_select = $this->exec_update($query);
                     
                     $this->response(200, $data_select);
                     break;
-                case "products":
-                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
-                    $query = "SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id AND (products.id LIKE '%$qsearch%' OR products.name LIKE '%$qsearch%')";
+                case "update":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    $area = isset($_POST["area"]) ? $_POST["area"] : '';
+
+                    $query = "UPDATE `tables` SET `name`='$name' ,`area`='$area' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                case "delete":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    
+                    $query = "DELETE FROM `tables` WHERE `id` = '$id' AND `status` = '0'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                $this->response(200, []);
+
+            }
+        }
+    }
+    
+    function categorys(){
+        if ($this->method == 'GET'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch ($type[1]){
+                case "getall":
+                    $query = "SELECT * FROM `categorys` ";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "getone":
+                    $id = isset($_GET["id"]) ? $_GET["id"] : '';
+
+                    $query = "SELECT * FROM `categorys` WHERE `id` = '$id'";
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
                 default:
                     $this->response(200, []);
             }
-            
-        }
-        
-    }
-
-    function categorys(){
-        if ($this->method == 'GET'){
-            $query = "SELECT * FROM `categorys` ";
-            $data_select = $this->select_list($query);
-            $this->response(200, $data_select);
         }
         elseif($this->method == 'POST'){
-            $name = isset($_POST["name"]) ? $_POST["name"] : '';
-
-            $query = "INSERT INTO `categorys`(`id`, `name`) VALUES ('','$name')";
-            $data_select = $this->exec_update($query);
-            
-            $this->response(200, $data_select);
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch ($type[1]){
+                case "add":
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    $query = "INSERT INTO `categorys`(`id`, `name`) VALUES ('','$name')";
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "update":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    
+                    $query = "UPDATE `categorys` SET `name`='$name' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+            }
         }
     }
     function products(){
