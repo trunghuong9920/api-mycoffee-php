@@ -366,6 +366,30 @@ class api extends restful_api {
             }
         }
     }
+    function orders(){
+        if ($this->method == 'GET'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "getall":
+                    $idb = isset($_GET["idb"]) ? $_GET["idb"] : '';
+                    $query = "SELECT invoicedetails.id, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '$idb'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+                    
+            }
+        }
+    }
 }
 $user_api = new api();
 ?>
