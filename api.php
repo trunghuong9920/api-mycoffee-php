@@ -324,6 +324,12 @@ class api extends restful_api {
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
+                case "getfromidc":
+                    $idc = isset($_GET["idc"]) ? $_GET["idc"] : '';
+                    $query = "SELECT * FROM `products` WHERE `idc` = '$idc'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
                 default: 
                     $this->response(200, $data_select);
             }
@@ -372,7 +378,7 @@ class api extends restful_api {
             switch($type[1]){
                 case "getall":
                     $idb = isset($_GET["idb"]) ? $_GET["idb"] : '';
-                    $query = "SELECT invoicedetails.id, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    $query = "SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
                     FROM `invoicedetails`, `products`,`bill` 
                     WHERE 
                     bill.idb = '$idb'
@@ -382,6 +388,58 @@ class api extends restful_api {
                     AND bill.status = 0
                     ORDER BY invoicedetails.timein DESC";
                     $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "getbill":
+                    $idb = isset($_GET["idb"]) ? $_GET["idb"] : '';
+                    $query = "SELECT `id` FROM `bill` WHERE `idb` = '$idb'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "searchproduct":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT * FROM `products` WHERE products.id LIKE '%$qsearch%' OR products.name LIKE '%$qsearch%'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+                    
+            }
+        }
+        elseif($this->method == 'POST'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "add":
+                    $idbill = isset($_POST["idbill"]) ? $_POST["idbill"] : '';
+                    $idp = isset($_POST["idp"]) ? $_POST["idp"] : '';
+                    $timein = isset($_POST["timein"]) ? $_POST["timein"] : '';
+                    $query = "INSERT INTO `invoicedetails`(`id`, `idbill`, `idproduct`, `amount`, `discount`, `timein`, `status`, `note`) 
+                    VALUES ('','$idbill','$idp','1','0','$timein','','')";
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "updateamount":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $amount = isset($_POST["amount"]) ? $_POST["amount"] : '';
+                    
+                    $query = "UPDATE `invoicedetails` SET `amount`='$amount' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "updatediscount":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $discount = isset($_POST["discount"]) ? $_POST["discount"] : '';
+                    
+                    $query = "UPDATE `invoicedetails` SET `discount`='$discount' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "delete":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    
+                    $query = "DELETE FROM `invoicedetails` WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
                     $this->response(200, $data_select);
                     break;
                 default:
