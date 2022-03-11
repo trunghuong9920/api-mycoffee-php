@@ -190,6 +190,14 @@ class api extends restful_api {
                     $data_select = $this->exec_update($query);
                     
                     $this->response(200, $data_select);
+                case "updatestatus":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $status = isset($_POST["status"]) ? $_POST["status"] : '';
+
+                    $query = "UPDATE `users` SET `status`='$status' WHERE `id` = ' $id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
                 default:
                     $this->response(200, []);
             }
@@ -211,6 +219,19 @@ class api extends restful_api {
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
+                case "checktable":
+                    $idb = isset($_GET["idb"]) ? $_GET["idb"] : '';
+                    $query = "SELECT invoicedetails.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = '$idb'
+                    AND tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                $this->response(200, []);
+
             }
         }
         elseif($this->method == 'POST'){
@@ -449,15 +470,32 @@ class api extends restful_api {
         }
     }
     function pay(){
-        if($this->method == 'POST'){
+        if ($this->method == 'GET'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "getall":
+                    $query = "SELECT * FROM `bill`";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+                    
+            }
+        }
+        elseif($this->method == 'POST'){
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
             switch($type[1]){
                 case "addbill":
                     $idtable = isset($_POST["idtable"]) ? $_POST["idtable"] : '';
                     $iduser = isset($_POST["iduser"]) ? $_POST["iduser"] : '';
+                    $discount = isset($_POST["discount"]) ? $_POST["discount"] : '';
+                    $timeout = isset($_POST["timeout"]) ? $_POST["timeout"] : '';
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $status = isset($_POST["status"]) ? $_POST["status"] : '';
 
                     $query = "INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
-                    VALUES ('','$idtable','','','','$iduser')";
+                    VALUES ('$id','$idtable','$discount','$timeout','$status','$iduser')";
 
                     $data_select = $this->exec_update($query);
                     $this->response(200, $data_select);
@@ -483,11 +521,55 @@ class api extends restful_api {
                     $data_select = $this->exec_update($query);
                     $this->response(200, $data_select);
                     break;
+                case "updatehalfinvbill":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $idbill = isset($_POST["idbill"]) ? $_POST["idbill"] : '';
+
+                    $query = "UPDATE `invoicedetails` SET `idbill`='$idbill',`status`='1' WHERE `id` = '$id'";
+
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
                 default:
                     $this->response(200, []);
                     
             }
         }
+    }
+    function switchdesk(){
+        if ($this->method == 'GET'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "getonebill":
+                    $idb = isset($_GET["idb"]) ? $_GET["idb"] : '';
+
+                    $query = "SELECT `id` FROM `bill` WHERE `status` = '0' AND `idb` = '$idb'";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+                    
+            }
+        }
+        elseif($this->method == 'POST'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "updateinvoicebill":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $idbill = isset($_POST["idbill"]) ? $_POST["idbill"] : '';
+        
+                    $query = "UPDATE `invoicedetails` SET `idbill`='$idbill' WHERE `id` = '$id'";
+
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+                    
+            }
+        }
+       
     }
 }
 $user_api = new api();
