@@ -392,7 +392,7 @@ class api extends restful_api {
                     break;
                 case "getbill":
                     $idb = isset($_GET["idb"]) ? $_GET["idb"] : '';
-                    $query = "SELECT `id` FROM `bill` WHERE `idb` = '$idb'";
+                    $query = "SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '$idb'";
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
@@ -439,6 +439,47 @@ class api extends restful_api {
                     $id = isset($_POST["id"]) ? $_POST["id"] : '';
                     
                     $query = "DELETE FROM `invoicedetails` WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+                    
+            }
+        }
+    }
+    function pay(){
+        if($this->method == 'POST'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "addbill":
+                    $idtable = isset($_POST["idtable"]) ? $_POST["idtable"] : '';
+                    $iduser = isset($_POST["iduser"]) ? $_POST["iduser"] : '';
+
+                    $query = "INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','$idtable','','','','$iduser')";
+
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "updatebill":
+                    $idbill = isset($_POST["idbill"]) ? $_POST["idbill"] : '';
+                    $discount = isset($_POST["discount"]) ? $_POST["discount"] : '';
+                    $timeout = isset($_POST["timeout"]) ? $_POST["timeout"] : '';
+                    $iduser = isset($_POST["iduser"]) ? $_POST["iduser"] : '';
+
+                    $query = "UPDATE `bill` SET `discount`='$discount',`timeout`='$timeout',`status`='1',`iduser`='$iduser' WHERE `id` = '$idbill'";
+
+                    $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "updateinvbill":
+                    $idbill = isset($_POST["idbill"]) ? $_POST["idbill"] : '';
+
+                    $query = "UPDATE `invoicedetails` SET 
+                    `status`='1'
+                    WHERE `status` = '0' AND `idbill` = '$idbill'";
+
                     $data_select = $this->exec_update($query);
                     $this->response(200, $data_select);
                     break;

@@ -5602,3 +5602,1700 @@ E `idc` = 'undefined']
 11.03.2022 06:14:20 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
 11.03.2022 06:14:22 sql=[SELECT * FROM `products` WHERE products.id LIKE '%1%' OR products.name LIKE '%1%'] 
 11.03.2022 06:14:23 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 09:55:44 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 09:55:44 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+11.03.2022 09:55:50 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 09:55:50 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 09:55:50 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 09:55:50 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 09:55:50 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 09:55:50 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 09:56:59 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 09:56:59 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 09:56:59 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 09:56:59 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 09:57:03 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 09:57:03 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 09:57:03 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 09:57:03 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 09:57:03 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:00:41 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 10:00:41 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:00:41 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:00:41 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:00:41 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:00:53 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 10:00:53 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:00:53 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:00:53 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:00:53 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:02:45 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:02:45 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:02:45 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:02:45 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:03:40 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:03:40 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 10:03:40 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:03:40 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:03:40 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:04:27 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:04:27 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:04:27 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 10:04:27 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:04:27 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:04:32 <!-- sql=[UPDATE `invoicedetails` SET `amount`='3' WHERE `id` = '17'] --> 
+11.03.2022 10:04:33 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 10:04:35 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 10:04:35 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:04:35 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:04:35 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 10:04:35 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:04:35 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:06:07 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:06:19 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:06:25 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:06:38 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:06:42 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:06:49 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:07:43 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:07:46 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:08:11 <!-- sql=[UPDATE `invoicedetails` SET `discount`='1' WHERE `id` = '17'] --> 
+11.03.2022 10:08:13 <!-- sql=[UPDATE `invoicedetails` SET `discount`='2' WHERE `id` = '17'] --> 
+11.03.2022 10:08:14 <!-- sql=[UPDATE `invoicedetails` SET `discount`='3' WHERE `id` = '17'] --> 
+11.03.2022 10:08:14 <!-- sql=[UPDATE `invoicedetails` SET `discount`='4' WHERE `id` = '17'] --> 
+11.03.2022 10:08:15 <!-- sql=[UPDATE `invoicedetails` SET `discount`='5' WHERE `id` = '17'] --> 
+11.03.2022 10:08:16 <!-- sql=[UPDATE `invoicedetails` SET `discount`='6' WHERE `id` = '17'] --> 
+11.03.2022 10:08:18 <!-- sql=[UPDATE `invoicedetails` SET `discount`='7' WHERE `id` = '17'] --> 
+11.03.2022 10:08:18 <!-- sql=[UPDATE `invoicedetails` SET `discount`='8' WHERE `id` = '17'] --> 
+11.03.2022 10:08:19 <!-- sql=[UPDATE `invoicedetails` SET `discount`='9' WHERE `id` = '17'] --> 
+11.03.2022 10:08:21 <!-- sql=[UPDATE `invoicedetails` SET `discount`='10' WHERE `id` = '17'] --> 
+11.03.2022 10:08:23 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:08:26 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:08:26 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:08:30 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:09:14 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:09:30 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:09:56 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:10:32 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:10:42 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:10:55 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:10:58 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:11:08 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:12:08 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:12:15 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:13:15 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:13:44 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:14:40 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:14:40 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:14:51 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:14:51 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:15:03 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:15:10 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:19:53 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:19:57 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:19:58 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 10:19:59 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:19:59 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 10:19:59 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:19:59 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 10:19:59 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:19:59 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:19:59 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:19:59 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:20:01 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:20:03 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:21:16 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:21:16 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:22:50 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:22:50 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:22:57 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:22:57 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:25:06 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:25:06 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:33:16 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:33:25 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:33:25 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:33:57 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:34:37 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:34:37 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:34:58 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:34:58 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:35:20 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:35:20 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:35:24 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:35:24 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:41:05 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:41:05 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:41:39 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:42:35 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:42:35 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:42:43 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:42:43 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:42:49 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 10:42:50 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:42:50 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:42:50 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:42:50 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 10:42:50 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 10:42:50 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:42:50 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:42:51 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:42:53 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 10:42:54 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:42:54 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:42:54 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 10:42:54 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:42:54 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 10:42:54 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:42:54 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:42:54 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:42:56 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:43:08 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:44:45 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:44:45 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:44:52 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:44:52 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:44:55 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+11.03.2022 10:44:55 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:44:55 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 10:44:55 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:44:55 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 10:44:55 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:44:55 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:44:55 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:44:55 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:44:57 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:45:04 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','1','','','','')] --> 
+11.03.2022 10:45:04 <!-- sql=[UPDATE `bill` SET `discount`='0',`timeout`='2022-3-11 16:45:4',`status`='1',`iduser`='1' WHERE `id` = '1'] --> 
+11.03.2022 10:45:04 <!-- sql=[UPDATE `invoicedetails` SET 
+                    `status`='1'
+                    WHERE `status` = '0' AND `idbill` = '1'] --> 
+11.03.2022 10:45:04 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 10:45:06 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:45:06 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:45:06 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 10:45:06 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:45:06 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:45:06 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:45:06 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:45:09 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 10:45:09 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:45:09 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:45:09 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 10:45:09 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 10:45:09 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:45:10 sql=[SELECT `id` FROM `bill` WHERE `idb` = '1'] 
+11.03.2022 10:45:10 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:45:10 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:46:55 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 10:46:55 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:46:55 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:46:55 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 10:46:55 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 10:46:55 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 10:46:55 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 10:46:55 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:46:55 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 10:47:15 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 10:47:26 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','2','','','','')] --> 
+11.03.2022 10:47:26 <!-- sql=[UPDATE `bill` SET `discount`='10',`timeout`='2022-3-11 16:47:26',`status`='1',`iduser`='1' WHERE `id` = '2'] --> 
+11.03.2022 10:47:26 <!-- sql=[UPDATE `invoicedetails` SET 
+                    `status`='1'
+                    WHERE `status` = '0' AND `idbill` = '2'] --> 
+11.03.2022 10:47:27 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:01:08 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 11:01:08 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:01:08 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:01:08 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:01:08 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 11:01:08 sql=[SELECT `id` FROM `bill` WHERE `idb` = '2'] 
+11.03.2022 11:01:08 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:01:09 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:03:15 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:03:15 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 11:03:15 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:03:15 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+11.03.2022 11:03:15 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:03:15 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:03:15 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:03:15 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:03:15 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:03:17 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:03:18 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:03:18 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:03:18 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:03:18 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:03:18 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:03:18 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:03:18 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:03:18 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:03:53 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:03:53 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:03:53 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:03:53 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:03:53 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:04:00 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+11.03.2022 11:04:00 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:04:00 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:04:00 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:04:00 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:04:00 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:04:00 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:04:00 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:04:00 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:04:03 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:04:04 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:04:04 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:04:04 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 11:04:04 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:04:04 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:04:04 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:04:04 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:04:04 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:04:45 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 11:04:45 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:04:45 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:04:45 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:04:45 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:15:53 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:15:54 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:15:54 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:15:54 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:15:54 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:15:54 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 11:15:54 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:15:54 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:15:54 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:15:55 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:15:57 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:15:57 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:15:57 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:15:57 sql=[SELECT * FROM `categorys` ] 
+E `idc` = 'undefined'] 
+11.03.2022 11:15:57 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:15:57 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:15:57 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:16:09 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:16:09 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:16:09 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:16:09 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:16:09 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:16:09 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:16:09 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:16:09 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:16:09 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:16:09 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:16:11 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:16:12 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:16:12 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 11:16:12 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:16:12 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:16:12 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:16:12 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:16:12 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:16:13 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:16:14 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:16:14 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+0' AND`idb` = '1'] 
+11.03.2022 11:16:14 sql=[SELECT * FROM `categorys` ] 
+E `idc` = 'undefined'] 
+11.03.2022 11:16:14 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:16:14 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:16:14 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:16:20 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:16:21 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:16:21 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:16:21 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:16:21 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:16:21 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:16:21 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:16:22 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:16:22 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:18:09 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:18:09 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:18:09 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:18:09 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:18:09 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:18:14 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:18:14 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:18:14 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:18:14 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:18:14 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:19:03 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:19:03 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:19:03 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:19:03 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:20:07 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:20:07 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:20:07 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:20:07 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:20:07 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:20:07 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:20:07 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:20:07 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:20:08 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:20:13 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+11.03.2022 11:20:13 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:20:16 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:20:16 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:20:16 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:20:16 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:20:16 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 11:20:16 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:20:16 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:20:16 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:20:21 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:20:22 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:20:22 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:20:22 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:20:22 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:20:22 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:20:22 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:20:22 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:20:22 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:20:22 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:21:05 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:05 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:21:05 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:21:05 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+11.03.2022 11:21:05 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:21:05 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:21:05 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:05 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:21:05 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:21:09 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:09 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:21:09 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:21:09 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:21:09 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:21:09 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:09 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:21:09 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:21:09 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:21:16 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:21:16 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:16 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:21:16 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:21:16 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:21:16 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:16 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:21:45 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:21:45 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+11.03.2022 11:21:45 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:21:45 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:21:45 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:45 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:21:45 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:45 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:21:45 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:21:48 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:21:48 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:48 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+11.03.2022 11:21:48 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:21:48 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:21:48 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:21:48 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:21:48 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:22:47 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:22:47 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:22:48 sql=[SELECT * FROM `categorys` ] 
+`id` = '8'] 
+11.03.2022 11:22:48 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:22:48 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+cts.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:22:48 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:23:29 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+11.03.2022 11:23:29 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:23:29 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:23:29 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:23:29 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:23:29 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','8','','','','1')] --> 
+11.03.2022 11:23:29 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:23:32 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:23:32 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:23:32 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+11.03.2022 11:23:32 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:23:32 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:23:32 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:23:32 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:23:32 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:23:45 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:23:46 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:23:46 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:23:46 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+11.03.2022 11:23:46 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:23:46 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+11.03.2022 11:23:46 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:23:46 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:24:10 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:24:11 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:11 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:24:11 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+11.03.2022 11:24:11 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:11 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:24:11 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:24:11 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:24:20 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:24:22 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:22 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:22 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:24:22 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:22 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:24:22 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:24:22 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:22 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','1','','','','1')] --> 
+11.03.2022 11:24:22 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:24:22 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:24:32 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:24:36 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:24:37 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:37 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:37 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:24:37 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:24:37 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:24:37 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:37 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:37 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:24:39 <!-- sql=[INSERT INTO `invoicedetails`(`id`, `idbill`, `idproduct`, `amount`, `discount`, `timein`, `status`, `note`) 
+                    VALUES ('','8','4','1','0','2022-3-11 17:24:39','','')] --> 
+11.03.2022 11:24:40 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:24:41 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:41 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:24:41 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:41 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:41 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:24:41 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:41 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:24:42 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:24:44 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:44 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:24:44 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:44 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:24:45 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:45 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:24:45 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:45 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:24:46 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:24:47 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:47 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:47 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+11.03.2022 11:24:47 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:24:47 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:24:47 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+11.03.2022 11:24:47 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:24:47 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:26:27 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:26:28 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:26:28 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:26:28 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:26:28 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:26:28 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:26:28 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:26:28 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:26:28 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','7','','','','1')] --> 
+11.03.2022 11:26:28 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:26:30 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:26:30 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:26:30 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+11.03.2022 11:26:30 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:26:30 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:26:30 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+11.03.2022 11:26:30 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:26:30 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:26:31 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:26:32 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:26:32 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:26:32 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+defined'] 
+11.03.2022 11:26:32 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:26:32 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+11.03.2022 11:26:32 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:26:32 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:26:33 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:26:54 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+11.03.2022 11:26:55 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '4'] 
+11.03.2022 11:26:55 sql=[SELECT * FROM `tables` WHERE `id` = '4'] 
+11.03.2022 11:26:55 sql=[SELECT * FROM `categorys` ] 
+11.03.2022 11:26:55 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+11.03.2022 11:26:55 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '4'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:26:55 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '4'] 
+11.03.2022 11:26:55 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+11.03.2022 11:26:55 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '4'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+11.03.2022 11:26:55 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','4','','','','1')] --> 
+11.03.2022 11:26:55 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
