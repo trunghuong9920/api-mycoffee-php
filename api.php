@@ -594,6 +594,14 @@ class api extends restful_api {
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
+                case "getinvoicebill":
+                    $idbill = isset($_GET["idbill"]) ? $_GET["idbill"] : '';
+                    $query = "SELECT products.img,products.name,invoicedetails.idproduct,products.price,invoicedetails.amount,
+                    invoicedetails.discount, invoicedetails.timein,invoicedetails.status FROM `invoicedetails`,products 
+                    WHERE invoicedetails.idbill = '$idbill' AND invoicedetails.idproduct = products.id";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
                 default:
                     $this->response(200, []);
                     
