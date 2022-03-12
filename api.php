@@ -220,10 +220,8 @@ class api extends restful_api {
                     $this->response(200, $data_select);
                     break;
                 case "checktable":
-                    $idb = isset($_GET["idb"]) ? $_GET["idb"] : '';
-                    $query = "SELECT invoicedetails.id FROM `invoicedetails`,`tables`,`bill`
-                    WHERE tables.id = '$idb'
-                    AND tables.id = bill.idb
+                    $query = "SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
                     AND bill.status = 0
                     AND invoicedetails.idbill = bill.id";
                     $data_select = $this->select_list($query);
@@ -562,6 +560,38 @@ class api extends restful_api {
                     $query = "UPDATE `invoicedetails` SET `idbill`='$idbill' WHERE `id` = '$id'";
 
                     $data_select = $this->exec_update($query);
+                    $this->response(200, $data_select);
+                    break;
+                default:
+                    $this->response(200, []);
+                    
+            }
+        }
+       
+    }
+
+    function statistical(){
+        if ($this->method == 'GET'){
+            $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
+            switch($type[1]){
+                case "getall":
+                    $query = "SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "getallsearch":
+                    $qsearch = isset($_GET["qsearch"]) ? $_GET["qsearch"] : '';
+                    $query = "SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%$qsearch%'
+                    OR bill.timeout LIKE '%$qsearch%'
+                    )
+                    ORDER BY timeout DESC";
+                    $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
                 default:

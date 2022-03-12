@@ -38779,3 +38779,2283 @@ E `idc` = 'undefined']
 11.03.2022 04:54:52 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
 11.03.2022 04:54:53 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
 11.03.2022 04:55:16 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 02:13:22 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:15:10 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 02:15:12 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:15:17 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:15:18 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:15:18 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:15:18 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+12.03.2022 02:15:18 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:15:18 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:15:18 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:15:18 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:15:18 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:15:18 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:19:40 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:19:40 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:19:50 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:19:50 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:21:06 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:21:09 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:21:09 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:21:09 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:23:11 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:23:11 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:23:28 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:23:28 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:23:41 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:23:41 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:23:51 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:23:51 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:23:51 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:23:54 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:23:54 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:23:54 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:24:12 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:24:12 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:24:24 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:24:24 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:24:42 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:26:15 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:26:15 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:26:28 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:26:28 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:26:44 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:26:44 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:26:47 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:26:47 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:26:47 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:26:57 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:26:57 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:27:04 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:27:04 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:27:04 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:27:18 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:27:18 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:27:23 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:27:23 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:27:29 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:27:29 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:27:32 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:27:32 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:27:32 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:28:09 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:28:09 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:28:17 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:28:17 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:28:30 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:28:30 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:28:47 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:28:47 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:29:05 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:29:05 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:29:07 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:29:07 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:29:07 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:29:17 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:29:17 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:29:21 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:29:21 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:29:58 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:29:58 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:30:22 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:30:22 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:30:40 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:30:40 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:31:56 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:31:56 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:04 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:04 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:32:16 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:21 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:23 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:24 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:25 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:29 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:31 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:32:31 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:32:31 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:32:31 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:32:31 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+12.03.2022 02:32:31 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:32:31 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+12.03.2022 02:32:31 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+12.03.2022 02:32:31 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:32:33 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:32:33 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:32:33 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+12.03.2022 02:32:37 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('31','8','0','2022-3-12 8:32:37','1','1')] --> 
+12.03.2022 02:32:37 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:37 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:32:37 <!-- sql=[UPDATE `invoicedetails` SET `idbill`='31',`status`='1' WHERE `id` = '36'] --> 
+12.03.2022 02:32:40 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:40 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:58 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:32:58 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:32:59 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:32:59 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+12.03.2022 02:32:59 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+12.03.2022 02:32:59 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:32:59 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+12.03.2022 02:32:59 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:32:59 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:33:00 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:33:03 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:33:03 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+12.03.2022 02:33:03 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:33:10 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','8','','','0','1')] --> 
+12.03.2022 02:33:10 <!-- sql=[UPDATE `invoicedetails` SET 
+                    `status`='1'
+                    WHERE `status` = '0' AND `idbill` = '7'] --> 
+12.03.2022 02:33:10 <!-- sql=[UPDATE `bill` SET `discount`='20',`timeout`='2022-3-12 8:33:10',`status`='1',`iduser`='1' WHERE `id` = '7'] --> 
+12.03.2022 02:33:10 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:33:10 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:33:13 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:33:13 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:33:13 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+0' AND`idb` = '7'] 
+12.03.2022 02:33:13 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:33:13 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:33:13 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:33:13 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:33:13 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:33:16 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:33:16 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:33:26 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:33:26 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:33:26 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:33:38 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:33:38 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:33:38 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+12.03.2022 02:33:38 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:33:38 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:33:38 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:33:38 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:33:38 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:33:43 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:33:43 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:33:55 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:33:55 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:33:55 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:34:20 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:34:20 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:34:33 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:34:33 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:34:39 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:34:39 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:34:42 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:34:42 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:34:52 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:34:52 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:34:55 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:34:55 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:34:55 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:35:23 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:35:23 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:35:28 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:35:28 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:35:28 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:35:31 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:35:31 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:35:31 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:36:37 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:36:37 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:37 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:37 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:37 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:38 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:36:38 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:38 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:38 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:38 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:41 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:36:41 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:36:42 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:42 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:42 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:42 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:36:56 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:37:05 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:38:22 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:38:39 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:38:39 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:38:52 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:38:52 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:39:32 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:39:32 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:39:36 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:39:36 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:39:36 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:39:51 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:39:51 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:39:55 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:39:55 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:39:57 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:39:57 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:39:57 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:40:30 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:40:30 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:40:36 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:40:36 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:40:39 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:40:39 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:41:05 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:41:05 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:41:28 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:41:28 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:41:36 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:41:36 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:41:38 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:41:38 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:41:38 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:41:38 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+12.03.2022 02:41:38 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:41:38 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:41:38 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:41:38 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:41:38 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:41:43 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:41:57 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:41:57 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:42:38 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:42:38 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:42:38 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:43:01 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:43:01 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:43:12 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:43:12 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:43:48 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:43:48 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:43:48 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:44:39 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:44:39 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:44:52 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:44:52 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:45:05 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:45:05 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:45:09 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:45:09 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:45:09 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:45:23 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:45:23 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:45:23 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+12.03.2022 02:45:23 sql=[SELECT * FROM `tables` WHERE `id` = '8'] 
+12.03.2022 02:45:23 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '8'] 
+12.03.2022 02:45:23 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:45:23 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:45:23 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '8'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:45:23 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:45:25 <!-- sql=[INSERT INTO `invoicedetails`(`id`, `idbill`, `idproduct`, `amount`, `discount`, `timein`, `status`, `note`) 
+                    VALUES ('','32','4','1','0','2022-3-12 8:45:25','','')] --> 
+12.03.2022 02:45:28 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:45:28 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:46:12 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:46:12 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:46:19 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:46:19 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 02:46:19 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 02:46:19 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+12.03.2022 02:46:19 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:46:19 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:46:19 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:46:19 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:46:19 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:46:21 <!-- sql=[INSERT INTO `invoicedetails`(`id`, `idbill`, `idproduct`, `amount`, `discount`, `timein`, `status`, `note`) 
+                    VALUES ('','15','4','1','0','2022-3-12 8:46:21','','')] --> 
+12.03.2022 02:46:23 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:46:23 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:46:49 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:46:49 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:46:52 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:46:52 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:46:52 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+0' AND`idb` = '1'] 
+12.03.2022 02:46:52 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:46:52 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:46:52 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 02:46:52 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:46:55 <!-- sql=[DELETE FROM `invoicedetails` WHERE `id` = '39'] --> 
+12.03.2022 02:46:56 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:46:56 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:46:58 sql=[SELECT * FROM `bill`] 
+d,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:46:58 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 02:46:58 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+12.03.2022 02:46:58 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:46:58 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 02:46:58 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:46:58 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:46:58 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:46:59 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:46:59 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:47:04 sql=[SELECT id,account,name,phone,avata, permission 12.03.2022 02:47:04 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:47:12 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 02:47:14 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:47:16 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:47:17 sql=[SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id] 
+12.03.2022 02:47:17 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 02:49:13 <!-- sql=[UPDATE `users` SET `status`='1' WHERE `id` = ' 4'] --> 
+12.03.2022 02:49:13 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 02:49:16 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 02:51:21 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:51:21 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:51:22 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:51:22 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:51:22 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:51:22 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+12.03.2022 02:51:22 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:51:22 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:51:22 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:51:22 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:51:22 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:52:25 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:52:33 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:52:39 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:52:39 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:52:41 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND `idb` = '1'] 
+12.03.2022 02:52:41 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:52:41 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:52:41 <!-- sql=[UPDATE `invoicedetails` SET `idbill`='15' WHERE `id` = '37'] --> 
+12.03.2022 02:52:50 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:52:50 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:52:50 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:53:30 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:53:30 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:53:37 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:53:37 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:53:37 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:53:38 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:53:38 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:53:38 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 02:53:38 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+12.03.2022 02:53:38 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 02:53:38 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:53:38 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:53:38 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:53:38 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:53:39 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:53:39 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:53:40 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND `idb` = '2'] 
+12.03.2022 02:53:40 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:53:40 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:53:40 <!-- sql=[UPDATE `invoicedetails` SET `idbill`='6' WHERE `id` = '37'] --> 
+12.03.2022 02:53:43 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 02:53:43 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:53:43 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:54:06 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:54:06 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:54:06 sql=[SELECT * FROM `tables` WHERE `id` = '2'] 
+12.03.2022 02:54:06 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:54:06 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:54:06 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+12.03.2022 02:54:06 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:54:07 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '2'] 
+12.03.2022 02:54:07 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:54:08 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 02:54:08 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '2'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:54:09 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND `idb` = '1'] 
+12.03.2022 02:54:09 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:54:09 <!-- sql=[UPDATE `invoicedetails` SET `idbill`='15' WHERE `id` = '37'] --> 
+12.03.2022 02:54:10 sql=[SELECT * FROM `bill`] 
+12.03.2022 02:54:10 sql=[SELECT * FROM `tables` WHERE `id` = '7'] 
+12.03.2022 02:54:10 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:54:10 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 02:54:10 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 02:54:10 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:54:10 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '7'] 
+12.03.2022 02:54:10 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '7'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 02:54:10 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 02:54:11 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 02:54:11 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:11:25 sql=[SELECT id,status FROM `users` WHERE `account` = 'trunghuong' AND `password` = '1'] 
+12.03.2022 03:11:29 sql=[SELECT id,status FROM `users` WHERE `account` = 'trunghuong' AND `password` = '12'] 
+12.03.2022 03:11:29 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 03:11:29 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 03:11:29 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:11:32 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 03:11:36 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '1'] 
+12.03.2022 03:11:36 sql=[SELECT `id` FROM `users` WHERE `id` = '1' AND `password` = '12'] 
+12.03.2022 03:11:41 <!-- sql=[UPDATE `users` SET `password`='1' WHERE `id` = '1'] --> 
+12.03.2022 03:11:44 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:15:27 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:15:27 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 03:15:29 sql=[SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id] 
+12.03.2022 03:15:32 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:20:23 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:25:23 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:27:11 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:27:19 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:27:29 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:27:35 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:27:43 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:34:09 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:34:10 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:34:10 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 03:34:11 sql=[SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id] 
+12.03.2022 03:34:11 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:34:59 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:35:01 sql=[SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id] 
+12.03.2022 03:35:01 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:35:17 sql=[SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id] 
+12.03.2022 03:35:17 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 03:35:17 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:35:18 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:37:10 sql=[SELECT * FROM `bill`] 
+12.03.2022 03:37:44 sql=[SELECT * FROM `bill`] 
+12.03.2022 03:37:57 sql=[SELECT * FROM `bill`] 
+12.03.2022 03:38:05 sql=[SELECT * FROM `bill`] 
+12.03.2022 03:39:17 sql=[SELECT * FROM `bill`] 
+12.03.2022 03:41:31 sql=[SELECT bill.id,bill.idb,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users WHERE bill.iduser = users.id] 
+12.03.2022 03:41:38 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:41:42 sql=[SELECT products.id,`img`,products.name,categorys.name as category,`price` FROM `products`,`categorys` WHERE products.idc = categorys.id] 
+12.03.2022 03:41:42 sql=[SELECT bill.id,bill.idb,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users WHERE bill.iduser = users.id] 
+12.03.2022 03:44:09 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:44:09 sql=[SELECT bill.id,bill.idb,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users WHERE bill.iduser = users.id ORDER BY timeout DESC] 
+12.03.2022 03:46:42 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:47:04 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:48:56 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:49:26 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 03:49:26 sql=[SELECT `account` FROM `users`] 
+12.03.2022 03:49:58 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:50:47 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 03:50:47 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:51:04 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 03:51:04 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:51:04 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 03:51:26 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:51:29 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 03:51:29 sql=[SELECT `account` FROM `users`] 
+12.03.2022 03:51:32 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:51:49 sql=[SELECT id,status FROM `users` WHERE `account` = 'david' AND `password` = '1'] 
+12.03.2022 03:51:49 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '10'] 
+12.03.2022 03:51:49 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 03:51:49 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:51:51 sql=[SELECT * FROM `bill`] 
+12.03.2022 03:51:51 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 03:51:51 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 03:51:51 sql=[SELECT * FROM `tables` WHERE `id` = '1'] 
+12.03.2022 03:51:51 sql=[SELECT * FROM `products` WHERE `idc` = 'undefined'] 
+12.03.2022 03:51:51 sql=[SELECT * FROM `categorys` ] 
+12.03.2022 03:51:51 sql=[SELECT invoicedetails.id,bill.id as idbill, products.img,products.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 03:51:51 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+12.03.2022 03:51:51 sql=[SELECT * FROM `products` WHERE `idc` = '3'] 
+12.03.2022 03:51:53 sql=[SELECT `id` FROM `bill` WHERE `status` = '0' AND`idb` = '1'] 
+cts.name,products.id as idp, invoicedetails.amount,products.price,invoicedetails.discount,invoicedetails.timein 
+                    FROM `invoicedetails`, `products`,`bill` 
+                    WHERE 
+                    bill.idb = '1'
+                    AND invoicedetails.idbill = bill.id
+                    AND invoicedetails.idproduct = products.id
+                    AND invoicedetails.status = 0
+                    AND bill.status = 0
+                    ORDER BY invoicedetails.timein DESC] 
+12.03.2022 03:52:00 <!-- sql=[UPDATE `bill` SET `discount`='10',`timeout`='2022-3-12 9:52:0',`status`='1',`iduser`='10' WHERE `id` = '15'] --> 
+12.03.2022 03:52:00 <!-- sql=[UPDATE `invoicedetails` SET 
+                    `status`='1'
+                    WHERE `status` = '0' AND `idbill` = '15'] --> 
+12.03.2022 03:52:00 <!-- sql=[INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
+                    VALUES ('','1','','','0','10')] --> 
+12.03.2022 03:52:00 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 03:52:00 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:52:13 sql=[SELECT id,status FROM `users` WHERE `account` = 'trunghuong' AND `password` = '1'] 
+12.03.2022 03:52:13 sql=[SELECT id,account,name,phone,avata, permission FROM `users` WHERE `id` = '1'] 
+12.03.2022 03:52:13 sql=[SELECT * FROM `tables` ORDER BY status DESC ] 
+12.03.2022 03:52:13 sql=[SELECT tables.id FROM `invoicedetails`,`tables`,`bill`
+                    WHERE tables.id = bill.idb
+                    AND bill.status = 0
+                    AND invoicedetails.idbill = bill.id] 
+12.03.2022 03:52:15 sql=[SELECT id,account,name,phone,avata, permission, status FROM `users` ] 
+12.03.2022 03:52:17 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:52:59 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:57:29 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:57:45 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:57:50 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%1%'
+                    AND bill.timeout = '%1%'
+                    AND bill.status = '%1%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:57:52 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:09 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%0%'
+                    AND bill.timeout = '%0%'
+                    AND bill.status = '%0%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:10 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%09%'
+                    AND bill.timeout = '%09%'
+                    AND bill.status = '%09%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:11 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%09:%'
+                    AND bill.timeout = '%09:%'
+                    AND bill.status = '%09:%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:12 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%09:5%'
+                    AND bill.timeout = '%09:5%'
+                    AND bill.status = '%09:5%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:12 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%09:52%'
+                    AND bill.timeout = '%09:52%'
+                    AND bill.status = '%09:52%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:13 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%09:5%'
+                    AND bill.timeout = '%09:5%'
+                    AND bill.status = '%09:5%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:13 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%09:%'
+                    AND bill.timeout = '%09:%'
+                    AND bill.status = '%09:%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:13 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%09%'
+                    AND bill.timeout = '%09%'
+                    AND bill.status = '%09%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:13 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%0%'
+                    AND bill.timeout = '%0%'
+                    AND bill.status = '%0%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:13 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:14 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%2%'
+                    AND bill.timeout = '%2%'
+                    AND bill.status = '%2%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:15 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%20%'
+                    AND bill.timeout = '%20%'
+                    AND bill.status = '%20%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:15 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%202%'
+                    AND bill.timeout = '%202%'
+                    AND bill.status = '%202%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:15 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%2022%'
+                    AND bill.timeout = '%2022%'
+                    AND bill.status = '%2022%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%202%'
+                    AND bill.timeout = '%202%'
+                    AND bill.status = '%202%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%20%'
+                    AND bill.timeout = '%20%'
+                    AND bill.status = '%20%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%2%'
+                    AND bill.timeout = '%2%'
+                    AND bill.status = '%2%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:20 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%A%'
+                    AND bill.timeout = '%A%'
+                    AND bill.status = '%A%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:21 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%A1%'
+                    AND bill.timeout = '%A1%'
+                    AND bill.status = '%A1%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:22 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%A%'
+                    AND bill.timeout = '%A%'
+                    AND bill.status = '%A%'
+                    ORDER BY timeout DESC] 
+12.03.2022 03:58:22 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%d%'
+                    AND bill.timeout = '%d%'
+                    AND bill.status = '%d%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%đ%'
+                    AND bill.timeout = '%đ%'
+                    AND bill.status = '%đ%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%d%'
+                    AND bill.timeout = '%d%'
+                    AND bill.status = '%d%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dd%'
+                    AND bill.timeout = '%dd%'
+                    AND bill.status = '%dd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%d%'
+                    AND bill.timeout = '%d%'
+                    AND bill.status = '%d%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dđ%'
+                    AND bill.timeout = '%dđ%'
+                    AND bill.status = '%dđ%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%d%'
+                    AND bill.timeout = '%d%'
+                    AND bill.status = '%d%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dd%'
+                    AND bill.timeout = '%dd%'
+                    AND bill.status = '%dd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddd%'
+                    AND bill.timeout = '%ddd%'
+                    AND bill.status = '%ddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dd%'
+                    AND bill.timeout = '%dd%'
+                    AND bill.status = '%dd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddđ%'
+                    AND bill.timeout = '%ddđ%'
+                    AND bill.status = '%ddđ%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dd%'
+                    AND bill.timeout = '%dd%'
+                    AND bill.status = '%dd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddd%'
+                    AND bill.timeout = '%ddd%'
+                    AND bill.status = '%ddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddd%'
+                    AND bill.timeout = '%dddd%'
+                    AND bill.status = '%dddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddd%'
+                    AND bill.timeout = '%ddd%'
+                    AND bill.status = '%ddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddđ%'
+                    AND bill.timeout = '%dddđ%'
+                    AND bill.status = '%dddđ%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddd%'
+                    AND bill.timeout = '%ddd%'
+                    AND bill.status = '%ddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddd%'
+                    AND bill.timeout = '%dddd%'
+                    AND bill.status = '%dddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddd%'
+                    AND bill.timeout = '%ddddd%'
+                    AND bill.status = '%ddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddd%'
+                    AND bill.timeout = '%dddd%'
+                    AND bill.status = '%dddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddđ%'
+                    AND bill.timeout = '%ddddđ%'
+                    AND bill.status = '%ddddđ%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddd%'
+                    AND bill.timeout = '%dddd%'
+                    AND bill.status = '%dddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddd%'
+                    AND bill.timeout = '%ddddd%'
+                    AND bill.status = '%ddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddddd%'
+                    AND bill.timeout = '%dddddd%'
+                    AND bill.status = '%dddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddd%'
+                    AND bill.timeout = '%ddddd%'
+                    AND bill.status = '%ddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddddđ%'
+                    AND bill.timeout = '%dddddđ%'
+                    AND bill.status = '%dddddđ%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddd%'
+                    AND bill.timeout = '%ddddd%'
+                    AND bill.status = '%ddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddddd%'
+                    AND bill.timeout = '%dddddd%'
+                    AND bill.status = '%dddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddddd%'
+                    AND bill.timeout = '%ddddddd%'
+                    AND bill.status = '%ddddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddddd%'
+                    AND bill.timeout = '%dddddd%'
+                    AND bill.status = '%dddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddddđ%'
+                    AND bill.timeout = '%ddddddđ%'
+                    AND bill.status = '%ddddddđ%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddddd%'
+                    AND bill.timeout = '%dddddd%'
+                    AND bill.status = '%dddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddddd%'
+                    AND bill.timeout = '%ddddddd%'
+                    AND bill.status = '%ddddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddddddd%'
+                    AND bill.timeout = '%dddddddd%'
+                    AND bill.status = '%dddddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddddd%'
+                    AND bill.timeout = '%ddddddd%'
+                    AND bill.status = '%ddddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddddddđ%'
+                    AND bill.timeout = '%dddddddđ%'
+                    AND bill.status = '%dddddddđ%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddddd%'
+                    AND bill.timeout = '%ddddddd%'
+                    AND bill.status = '%ddddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:08 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddddd%'
+                    AND bill.timeout = '%dddddd%'
+                    AND bill.status = '%dddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:08 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddddd%'
+                    AND bill.timeout = '%ddddd%'
+                    AND bill.status = '%ddddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:08 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dddd%'
+                    AND bill.timeout = '%dddd%'
+                    AND bill.status = '%dddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:08 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%ddd%'
+                    AND bill.timeout = '%ddd%'
+                    AND bill.status = '%ddd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:08 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%dd%'
+                    AND bill.timeout = '%dd%'
+                    AND bill.status = '%dd%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:08 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%d%'
+                    AND bill.timeout = '%d%'
+                    AND bill.status = '%d%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:08 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:09 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%A%'
+                    AND bill.timeout = '%A%'
+                    AND bill.status = '%A%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:11 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%A1%'
+                    AND bill.timeout = '%A1%'
+                    AND bill.status = '%A1%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:11 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%A%'
+                    AND bill.timeout = '%A%'
+                    AND bill.status = '%A%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:11 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:15 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%D%'
+                    AND bill.timeout = '%D%'
+                    AND bill.status = '%D%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:17 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%a%'
+                    AND bill.timeout = '%a%'
+                    AND bill.status = '%a%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:17 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:18 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%1%'
+                    AND bill.timeout = '%1%'
+                    AND bill.status = '%1%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:18 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:19 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%3%'
+                    AND bill.timeout = '%3%'
+                    AND bill.status = '%3%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:19 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:20 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND tables.name = '%2%'
+                    AND bill.timeout = '%2%'
+                    AND bill.status = '%2%'
+                    ORDER BY timeout DESC] 
+12.03.2022 04:00:20 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name = '%0%'
+                    OR bill.timeout = '%0%'
+                    OR bill.status = '%0%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:17 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:18 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name = '%0%'
+                    OR bill.timeout = '%0%'
+                    OR bill.status = '%0%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:22 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:23 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name = '%1%'
+                    OR bill.timeout = '%1%'
+                    OR bill.status = '%1%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:27 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:29 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name = '%0%'
+                    OR bill.timeout = '%0%'
+                    OR bill.status = '%0%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:30 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:33 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name = '%A%'
+                    OR bill.timeout = '%A%'
+                    OR bill.status = '%A%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name = '%A1%'
+                    OR bill.timeout = '%A1%'
+                    OR bill.status = '%A1%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:42 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name = '%A%'
+                    OR bill.timeout = '%A%'
+                    OR bill.status = '%A%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:01:42 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:15 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A%'
+                    OR bill.timeout LIKE '%A%'
+                    OR bill.status LIKE '%A%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A1%'
+                    OR bill.timeout LIKE '%A1%'
+                    OR bill.status LIKE '%A1%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:22 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A%'
+                    OR bill.timeout LIKE '%A%'
+                    OR bill.status LIKE '%A%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:22 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:24 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2%'
+                    OR bill.timeout LIKE '%2%'
+                    OR bill.status LIKE '%2%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:24 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%20%'
+                    OR bill.timeout LIKE '%20%'
+                    OR bill.status LIKE '%20%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:25 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%202%'
+                    OR bill.timeout LIKE '%202%'
+                    OR bill.status LIKE '%202%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:25 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022%'
+                    OR bill.timeout LIKE '%2022%'
+                    OR bill.status LIKE '%2022%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:27 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-%'
+                    OR bill.timeout LIKE '%2022-%'
+                    OR bill.status LIKE '%2022-%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:27 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-0%'
+                    OR bill.timeout LIKE '%2022-0%'
+                    OR bill.status LIKE '%2022-0%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:29 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03%'
+                    OR bill.timeout LIKE '%2022-03%'
+                    OR bill.status LIKE '%2022-03%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:31 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-%'
+                    OR bill.timeout LIKE '%2022-03-%'
+                    OR bill.status LIKE '%2022-03-%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:31 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-1%'
+                    OR bill.timeout LIKE '%2022-03-1%'
+                    OR bill.status LIKE '%2022-03-1%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:32 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-11%'
+                    OR bill.timeout LIKE '%2022-03-11%'
+                    OR bill.status LIKE '%2022-03-11%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:34 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-1%'
+                    OR bill.timeout LIKE '%2022-03-1%'
+                    OR bill.status LIKE '%2022-03-1%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-%'
+                    OR bill.timeout LIKE '%2022-03-%'
+                    OR bill.status LIKE '%2022-03-%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03%'
+                    OR bill.timeout LIKE '%2022-03%'
+                    OR bill.status LIKE '%2022-03%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-0%'
+                    OR bill.timeout LIKE '%2022-0%'
+                    OR bill.status LIKE '%2022-0%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-%'
+                    OR bill.timeout LIKE '%2022-%'
+                    OR bill.status LIKE '%2022-%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022%'
+                    OR bill.timeout LIKE '%2022%'
+                    OR bill.status LIKE '%2022%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%202%'
+                    OR bill.timeout LIKE '%202%'
+                    OR bill.status LIKE '%202%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%20%'
+                    OR bill.timeout LIKE '%20%'
+                    OR bill.status LIKE '%20%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2%'
+                    OR bill.timeout LIKE '%2%'
+                    OR bill.status LIKE '%2%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:35 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:36 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%d%'
+                    OR bill.timeout LIKE '%d%'
+                    OR bill.status LIKE '%d%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:37 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:37 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%D%'
+                    OR bill.timeout LIKE '%D%'
+                    OR bill.status LIKE '%D%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:37 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%DA%'
+                    OR bill.timeout LIKE '%DA%'
+                    OR bill.status LIKE '%DA%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:38 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%D%'
+                    OR bill.timeout LIKE '%D%'
+                    OR bill.status LIKE '%D%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:38 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%DÂ%'
+                    OR bill.timeout LIKE '%DÂ%'
+                    OR bill.status LIKE '%DÂ%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:38 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%D%'
+                    OR bill.timeout LIKE '%D%'
+                    OR bill.status LIKE '%D%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:38 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%Da%'
+                    OR bill.timeout LIKE '%Da%'
+                    OR bill.status LIKE '%Da%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:39 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%Dav%'
+                    OR bill.timeout LIKE '%Dav%'
+                    OR bill.status LIKE '%Dav%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:39 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%Davi%'
+                    OR bill.timeout LIKE '%Davi%'
+                    OR bill.status LIKE '%Davi%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:39 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%David%'
+                    OR bill.timeout LIKE '%David%'
+                    OR bill.status LIKE '%David%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:40 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%Davi%'
+                    OR bill.timeout LIKE '%Davi%'
+                    OR bill.status LIKE '%Davi%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:41 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%Dav%'
+                    OR bill.timeout LIKE '%Dav%'
+                    OR bill.status LIKE '%Dav%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:41 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%Da%'
+                    OR bill.timeout LIKE '%Da%'
+                    OR bill.status LIKE '%Da%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:41 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%D%'
+                    OR bill.timeout LIKE '%D%'
+                    OR bill.status LIKE '%D%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:41 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:45 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%D%'
+                    OR bill.timeout LIKE '%D%'
+                    OR bill.status LIKE '%D%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:46 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%D3%'
+                    OR bill.timeout LIKE '%D3%'
+                    OR bill.status LIKE '%D3%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:50 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%D%'
+                    OR bill.timeout LIKE '%D%'
+                    OR bill.status LIKE '%D%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:02:51 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:21 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%0%'
+                    OR bill.timeout LIKE '%0%'
+                    OR bill.status LIKE '%0%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:23 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:24 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%0%'
+                    OR bill.timeout LIKE '%0%'
+                    OR bill.status LIKE '%0%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:25 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:25 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%1%'
+                    OR bill.timeout LIKE '%1%'
+                    OR bill.status LIKE '%1%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:26 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:27 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A%'
+                    OR bill.timeout LIKE '%A%'
+                    OR bill.status LIKE '%A%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:28 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A1%'
+                    OR bill.timeout LIKE '%A1%'
+                    OR bill.status LIKE '%A1%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:30 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A%'
+                    OR bill.timeout LIKE '%A%'
+                    OR bill.status LIKE '%A%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:30 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:32 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%0%'
+                    OR bill.timeout LIKE '%0%'
+                    OR bill.status LIKE '%0%')
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:33 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:57 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2%'
+                    OR bill.timeout LIKE '%2%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:58 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%20%'
+                    OR bill.timeout LIKE '%20%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:58 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%202%'
+                    OR bill.timeout LIKE '%202%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:03:58 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022%'
+                    OR bill.timeout LIKE '%2022%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:00 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-%'
+                    OR bill.timeout LIKE '%2022-%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:01 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-0%'
+                    OR bill.timeout LIKE '%2022-0%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:01 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03%'
+                    OR bill.timeout LIKE '%2022-03%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:02 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-%'
+                    OR bill.timeout LIKE '%2022-03-%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:03 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-1%'
+                    OR bill.timeout LIKE '%2022-03-1%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:03 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-12%'
+                    OR bill.timeout LIKE '%2022-03-12%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:06 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-1%'
+                    OR bill.timeout LIKE '%2022-03-1%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03-%'
+                    OR bill.timeout LIKE '%2022-03-%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-03%'
+                    OR bill.timeout LIKE '%2022-03%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-0%'
+                    OR bill.timeout LIKE '%2022-0%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022-%'
+                    OR bill.timeout LIKE '%2022-%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2022%'
+                    OR bill.timeout LIKE '%2022%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%202%'
+                    OR bill.timeout LIKE '%202%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%20%'
+                    OR bill.timeout LIKE '%20%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%2%'
+                    OR bill.timeout LIKE '%2%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:07 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:10 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A%'
+                    OR bill.timeout LIKE '%A%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:10 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A5%'
+                    OR bill.timeout LIKE '%A5%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    AND( tables.name LIKE '%A%'
+                    OR bill.timeout LIKE '%A%'
+                    )
+                    ORDER BY timeout DESC] 
+12.03.2022 04:04:16 sql=[SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables 
+                    WHERE bill.iduser = users.id
+                    AND bill.idb = tables.id
+                    ORDER BY timeout DESC] 
