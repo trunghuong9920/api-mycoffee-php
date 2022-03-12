@@ -156,15 +156,15 @@ class api extends restful_api {
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
             switch($type[1]){
                 case "adduser":
-                    $account = isset($_POST["account"]) ? $_POST["account"] : '';
-                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
-                    $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
-                    $avata = isset($_POST["avata"]) ? $_POST["avata"] : '';
-                    $permission = isset($_POST["permission"]) ? $_POST["permission"] : '';
-                    $password = isset($_POST["password"]) ? $_POST["password"] : '';
+                    $account = isset($_POST["account"]) ? $_POST["account"] : NULL;
+                    $name = isset($_POST["name"]) ? $_POST["name"] : NULL;
+                    $phone = isset($_POST["phone"]) ? $_POST["phone"] : NULL;
+                    $avata = isset($_POST["avata"]) ? $_POST["avata"] : NULL;
+                    $permission = isset($_POST["permission"]) ? $_POST["permission"] : NULL;
+                    $password = isset($_POST["password"]) ? $_POST["password"] : NULL;
         
                     $query = "INSERT INTO `users`(`id`, `account`, `name`, `phone`, `avata`, `permission`, `password`, `status`) 
-                    VALUES ('','$account','$name','$phone','$avata','$permission','$password','')";
+                    VALUES (NULL,'$account','$name','$phone','$avata','$permission','$password',NULL)";
                     $data_select = $this->exec_update($query);
                     
                     $this->response(200, $data_select);
@@ -236,10 +236,10 @@ class api extends restful_api {
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
             switch($type[1]){
                 case "add":
-                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
-                    $area = isset($_POST["area"]) ? $_POST["area"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : NULL;
+                    $area = isset($_POST["area"]) ? $_POST["area"] : NULL;
 
-                    $query = "INSERT INTO `tables`(`id`, `name`, `status`, `area`) VALUES ('','$name','','$area')";
+                    $query = "INSERT INTO `tables`(`id`, `name`, `status`, `area`) VALUES (NULL,'$name',NULL,'$area')";
                     $data_select = $this->exec_update($query);
                     
                     $this->response(200, $data_select);
@@ -300,8 +300,8 @@ class api extends restful_api {
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
             switch ($type[1]){
                 case "add":
-                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
-                    $query = "INSERT INTO `categorys`(`id`, `name`) VALUES ('','$name')";
+                    $name = isset($_POST["name"]) ? $_POST["name"] : NULL;
+                    $query = "INSERT INTO `categorys`(`id`, `name`) VALUES (NULL,'$name')";
                     $data_select = $this->exec_update($query);
                     $this->response(200, $data_select);
                     break;
@@ -357,10 +357,10 @@ class api extends restful_api {
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
             switch($type[1]){
                 case "add":
-                    $idc = isset($_POST["idc"]) ? $_POST["idc"] : '';
-                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
-                    $img = isset($_POST["img"]) ? $_POST["img"] : '';
-                    $price = isset($_POST["price"]) ? $_POST["price"] : '';
+                    $idc = isset($_POST["idc"]) ? $_POST["idc"] : NULL;
+                    $name = isset($_POST["name"]) ? $_POST["name"] : NULL;
+                    $img = isset($_POST["img"]) ? $_POST["img"] :NULL;
+                    $price = isset($_POST["price"]) ? $_POST["price"] : NULL;
 
                     $query = "INSERT INTO `products`(`id`, `idc`, `name`, `img`, `price`) 
                     VALUES ('','$idc','$name','$img','$price')";
@@ -430,11 +430,11 @@ class api extends restful_api {
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
             switch($type[1]){
                 case "add":
-                    $idbill = isset($_POST["idbill"]) ? $_POST["idbill"] : '';
-                    $idp = isset($_POST["idp"]) ? $_POST["idp"] : '';
-                    $timein = isset($_POST["timein"]) ? $_POST["timein"] : '';
+                    $idbill = isset($_POST["idbill"]) ? $_POST["idbill"] : NULL;
+                    $idp = isset($_POST["idp"]) ? $_POST["idp"] : NULL;
+                    $timein = isset($_POST["timein"]) ? $_POST["timein"] : NULL;
                     $query = "INSERT INTO `invoicedetails`(`id`, `idbill`, `idproduct`, `amount`, `discount`, `timein`, `status`, `note`) 
-                    VALUES ('','$idbill','$idp','1','0','$timein','','')";
+                    VALUES (NULL,'$idbill','$idp','1','0','$timein',NULL,NULL)";
                     $data_select = $this->exec_update($query);
                     $this->response(200, $data_select);
                     break;
@@ -485,12 +485,12 @@ class api extends restful_api {
             $type = explode('/', trim($_SERVER['PATH_INFO'],'/'));
             switch($type[1]){
                 case "addbill":
-                    $idtable = isset($_POST["idtable"]) ? $_POST["idtable"] : '';
-                    $iduser = isset($_POST["iduser"]) ? $_POST["iduser"] : '';
-                    $discount = isset($_POST["discount"]) ? $_POST["discount"] : '';
-                    $timeout = isset($_POST["timeout"]) ? $_POST["timeout"] : '';
+                    $idtable = isset($_POST["idtable"]) ? $_POST["idtable"] : NULL;
+                    $iduser = isset($_POST["iduser"]) ? $_POST["iduser"] : NULL;
+                    $discount = isset($_POST["discount"]) ? $_POST["discount"] : NULL;
+                    $timeout = isset($_POST["timeout"]) ? $_POST["timeout"] : NULL;
                     $id = isset($_POST["id"]) ? $_POST["id"] : '';
-                    $status = isset($_POST["status"]) ? $_POST["status"] : '';
+                    $status = isset($_POST["status"]) ? $_POST["status"] : NULL;
 
                     $query = "INSERT INTO `bill`(`id`, `idb`, `discount`, `timeout`, `status`, `iduser`) 
                     VALUES ('$id','$idtable','$discount','$timeout','$status','$iduser')";
