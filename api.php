@@ -183,6 +183,21 @@ class api extends restful_api {
                     
                     $this->response(200, $data_select);
                     break;
+                case "updateuserallinfo":
+                    $id = isset($_POST["id"]) ? $_POST["id"] : '';
+                    $account = isset($_POST["account"]) ? $_POST["account"] : '';
+                    $name = isset($_POST["name"]) ? $_POST["name"] : '';
+                    $phone = isset($_POST["phone"]) ? $_POST["phone"] : '';
+                    $avata = isset($_POST["avata"]) ? $_POST["avata"] : '';
+                    $permission = isset($_POST["permission"]) ? $_POST["permission"] : '';
+                    $password = isset($_POST["password"]) ? $_POST["password"] : '';
+
+                    $query = "UPDATE `users` SET `account`='$account',`name`='$name',
+                    `phone`='$phone',`avata`='$avata',`permission`='$permission',`password` = '$password' WHERE `id` = '$id'";
+                    $data_select = $this->exec_update($query);
+                    
+                    $this->response(200, $data_select);
+                    break;
                 case "deleteuser":
                     $id = isset($_POST["id"]) ? $_POST["id"] : '';
 
@@ -589,6 +604,7 @@ class api extends restful_api {
                     AND bill.idb = tables.id
                     AND( tables.name LIKE '%$qsearch%'
                     OR bill.timeout LIKE '%$qsearch%'
+                    OR users.name LIKE '%$qsearch%'
                     )
                     ORDER BY timeout DESC";
                     $data_select = $this->select_list($query);
