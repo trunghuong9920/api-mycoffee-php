@@ -164,10 +164,10 @@ class api extends restful_api {
                     $password = isset($_POST["password"]) ? $_POST["password"] : NULL;
         
                     $query = "INSERT INTO `users`(`id`, `account`, `name`, `phone`, `avata`, `permission`, `password`, `status`) 
-                    VALUES (NULL,'$account','$name','$phone','$avata','$permission','$password',NULL)";
-                    $data_select = $this->exec_update($query);
-                    
-                    $this->response(200, $data_select);
+                    VALUES (NULL,'$account','$name','$phone','$avata','$permission','$password',0)";
+                    $dataupdate = $this->exec_update($query);
+
+                    $this->response(200, $dataupdate);
                     break;
                 case "updateuser":
                     $id = isset($_POST["id"]) ? $_POST["id"] : '';
@@ -254,7 +254,7 @@ class api extends restful_api {
                     $name = isset($_POST["name"]) ? $_POST["name"] : NULL;
                     $area = isset($_POST["area"]) ? $_POST["area"] : NULL;
 
-                    $query = "INSERT INTO `tables`(`id`, `name`, `status`, `area`) VALUES (NULL,'$name',NULL,'$area')";
+                    $query = "INSERT INTO `tables`(`id`, `name`, `status`, `area`) VALUES (NULL,'$name',0,'$area')";
                     $data_select = $this->exec_update($query);
                     
                     $this->response(200, $data_select);
@@ -449,7 +449,7 @@ class api extends restful_api {
                     $idp = isset($_POST["idp"]) ? $_POST["idp"] : NULL;
                     $timein = isset($_POST["timein"]) ? $_POST["timein"] : NULL;
                     $query = "INSERT INTO `invoicedetails`(`id`, `idbill`, `idproduct`, `amount`, `discount`, `timein`, `status`, `note`) 
-                    VALUES (NULL,'$idbill','$idp','1','0','$timein',NULL,NULL)";
+                    VALUES (NULL,'$idbill','$idp','1','0','$timein',0,'0')";
                     $data_select = $this->exec_update($query);
                     $this->response(200, $data_select);
                     break;
@@ -615,6 +615,12 @@ class api extends restful_api {
                     $query = "SELECT products.img,products.name,invoicedetails.idproduct,products.price,invoicedetails.amount,
                     invoicedetails.discount, invoicedetails.timein,invoicedetails.status FROM `invoicedetails`,products 
                     WHERE invoicedetails.idbill = '$idbill' AND invoicedetails.idproduct = products.id";
+                    $data_select = $this->select_list($query);
+                    $this->response(200, $data_select);
+                    break;
+                case "getfordate":
+                    $date = isset($_GET["date"]) ? $_GET["date"] : '';
+                    $query = "SELECT bill.id,tables.name as nametable,bill.discount,bill.timeout,bill.status,users.name FROM `bill`,users,tables WHERE bill.iduser = users.id AND bill.idb = tables.id AND bill.timeout LIKE '%$date%' ORDER BY timeout DESC;";
                     $data_select = $this->select_list($query);
                     $this->response(200, $data_select);
                     break;
